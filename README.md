@@ -12,7 +12,7 @@ cd <repository-name>
 npm install
 npm run dev
 ```
-
+.
 ## Built with
 
 - TanStack Start
