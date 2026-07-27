@@ -8,7 +8,8 @@ export default defineConfig({
   resolve: { tsconfigPaths: true },
   plugins: [
     tanstackStart({
-      server: { entry: "server" },
+      // Use default server entry provided by TanStack Start instead of
+      // custom `server` entry which can cause 404s on Vercel/Nitro runtimes.
     }),
     nitro(),
     tailwindcss(),
